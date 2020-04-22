@@ -28,11 +28,11 @@ jobs:
         # GitHub Token
         githubToken: ${{ secrets.GITHUB_TOKEN }}
         # JPEG quality level
-        jpegQuality: 80 # optional, default is 80
+        jpegQuality: 20 # optional, default is 80
         # PNG quality level
-        pngQuality: 80 # optional, default is 80
+        pngQuality: 20 # optional, default is 80
         # WEBP quality level
-        webpQuality: 80 # optional, default is 80
+        webpQuality: 20 # optional, default is 80
         # Paths to ignore during search
         # ignorePaths: # optional, default is node_modules/**
 

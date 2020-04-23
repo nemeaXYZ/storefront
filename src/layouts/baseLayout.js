@@ -63,7 +63,9 @@ class Layout extends React.Component {
                         />
                       </Link>
                       <div className="flex flex-wrap">
-                        {links.map((l, i) => (
+                        {/*
+                        TODO: Reenable as needed
+                        links.map((l, i) => (
                           <Link to={l.link} key={i}>
                             <p
                               key={i}
@@ -72,7 +74,7 @@ class Layout extends React.Component {
                               {l.name}
                             </p>
                           </Link>
-                        ))}
+                        ))*/}
                       </div>
                       {/* <div className="flex flex-1 justify-end pr-4 relative">
                         <Link to="/cart">

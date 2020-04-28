@@ -11,6 +11,7 @@ import {
 } from "../components";
 import CartLink from "../components/CartLink";
 import { titleIfy, slugify } from "../../utils/helpers";
+import { loadStripe } from "@stripe/stripe-js";
 
 import { graphql } from "gatsby";
 
@@ -25,7 +26,7 @@ const Home = () => {
   var SUBSCRIPTION_QUARTERLY_PLAN_ID = "plan_HBLiwxfPHtSd1J";
   var SUBSCRIPTION_MONTHLY_PLAN_ID = "plan_HBLhvOBXUOLqHp";
 
-  var stripe = Stripe(PUBLISHABLE_KEY);
+  var stripe = loadStripe(PUBLISHABLE_KEY);
 
   // Handle any errors from Checkout
   var handleResult = function(result) {

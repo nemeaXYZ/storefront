@@ -25,21 +25,6 @@ const Home = () => {
   var SUBSCRIPTION_QUARTERLY_PLAN_ID = "plan_HBLiwxfPHtSd1J";
   var SUBSCRIPTION_MONTHLY_PLAN_ID = "plan_HBLhvOBXUOLqHp";
 
-  if (PUBLISHABLE_KEY === "pk_1234") {
-    console.log(
-      "Replace the hardcoded publishable key with your own publishable key: https://dashboard.stripe.com/test/apikeys"
-    );
-  }
-
-  if (
-    SUBSCRIPTION_BASIC_PLAN_ID === "plan_1234" ||
-    SUBSCRIPTION_PRO_PLAN_ID === "plan_5678"
-  ) {
-    console.log(
-      "Replace the hardcoded plan ID with your own plan: https://stripe.com/docs/api/plans"
-    );
-  }
-
   var stripe = Stripe(PUBLISHABLE_KEY);
 
   // Handle any errors from Checkout

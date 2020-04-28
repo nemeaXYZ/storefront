@@ -51,6 +51,7 @@ const Home = () => {
       .then(handleResult);
   };
 
+  /*
   document.getElementById("basic-btn").addEventListener("click", function(evt) {
     redirectToCheckout(SUBSCRIPTION_BASIC_PLAN_ID);
   });
@@ -58,7 +59,7 @@ const Home = () => {
   document.getElementById("pro-btn").addEventListener("click", function(evt) {
     redirectToCheckout(SUBSCRIPTION_PRO_PLAN_ID);
   });
-
+*/
   return (
     <>
       <SEO title="Home" />

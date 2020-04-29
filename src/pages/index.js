@@ -77,24 +77,30 @@ const Home = () => {
               <Button
                 full
                 title="Yearly Subscription"
-                onClick={() => redirectToCheckout(SUBSCRIPTION_YEARLY_PLAN_ID)}
+                onClick={() =>
+                  this.redirectToCheckout(SUBSCRIPTION_YEARLY_PLAN_ID)
+                }
               />
               <Button
                 full
                 title="6 Month Subscription"
-                onClick={() => redirectToCheckout(SUBSCRIPTION_6MONTH_PLAN_ID)}
+                onClick={() =>
+                  this.redirectToCheckout(SUBSCRIPTION_6MONTH_PLAN_ID)
+                }
               />
               <Button
                 full
                 title="Quarterly (every 3 months) Subscription"
                 onClick={() =>
-                  redirectToCheckout(SUBSCRIPTION_QUARTERLY_PLAN_ID)
+                  this.redirectToCheckout(SUBSCRIPTION_QUARTERLY_PLAN_ID)
                 }
               />
               <Button
                 full
                 title="Monthly Subscription"
-                onClick={() => redirectToCheckout(SUBSCRIPTION_MONTHLY_PLAN_ID)}
+                onClick={() =>
+                  this.redirectToCheckout(SUBSCRIPTION_MONTHLY_PLAN_ID)
+                }
               />
             </div>
           </div>

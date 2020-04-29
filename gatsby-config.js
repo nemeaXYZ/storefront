@@ -1,8 +1,20 @@
 module.exports = {
+  // Customize your site metadata:
   siteMetadata: {
-    title: `Gatsby JAMstack ECommerce Professional`,
-    description: `Get up and running with your next E Commerce Website.`,
-    author: `@dabit3`,
+    title: "Nemea",
+    author: "Lex Templeton",
+    description: "Fuel for the driven.",
+    siteUrl: "https://nemea.xyz/",
+    social: [
+      {
+        name: "twitter",
+        url: "https://twitter.com/nemeaxyz",
+      },
+      {
+        name: "github",
+        url: "https://github.com/nemeaXYZ",
+      },
+    ],
   },
   plugins: [
     {
@@ -49,4 +61,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

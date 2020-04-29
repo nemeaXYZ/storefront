@@ -12,6 +12,7 @@ import {
 import CartLink from "../components/CartLink";
 import { titleIfy, slugify } from "../../utils/helpers";
 import { loadStripe } from "@stripe/stripe-js";
+import Button from "../components/Button";
 
 import { graphql } from "gatsby";
 
@@ -72,6 +73,30 @@ const Home = () => {
         >
           <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
             <h1>Drive, by Nemea</h1>
+            <div>
+              <Button
+                full
+                title="Yearly Subscription"
+                onClick={() => redirectToCheckout(SUBSCRIPTION_YEARLY_PLAN_ID)}
+              />
+              <Button
+                full
+                title="6 Month Subscription"
+                onClick={() => redirectToCheckout(SUBSCRIPTION_6MONTH_PLAN_ID)}
+              />
+              <Button
+                full
+                title="Quarterly (every 3 months) Subscription"
+                onClick={() =>
+                  redirectToCheckout(SUBSCRIPTION_QUARTERLY_PLAN_ID)
+                }
+              />
+              <Button
+                full
+                title="Monthly Subscription"
+                onClick={() => redirectToCheckout(SUBSCRIPTION_MONTHLY_PLAN_ID)}
+              />
+            </div>
           </div>
         </div>
       </div>

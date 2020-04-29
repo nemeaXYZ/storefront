@@ -27,7 +27,7 @@ const Home = () => {
   var SUBSCRIPTION_QUARTERLY_PLAN_ID = "plan_HBLiwxfPHtSd1J";
   var SUBSCRIPTION_MONTHLY_PLAN_ID = "plan_HBLhvOBXUOLqHp";
 
-  var stripe = loadStripe(PUBLISHABLE_KEY);
+  const stripePromise = loadStripe(PUBLISHABLE_KEY);
 
   // Handle any errors from Checkout
   var handleResult = function(result) {
@@ -37,19 +37,19 @@ const Home = () => {
     }
   };
 
-  var redirectToCheckout = function(planId) {
-    // Make the call to Stripe.js to redirect to the checkout page
-    // with the current quantity
-    stripe
-      .redirectToCheckout({
-        items: [{ plan: planId, quantity: 1 }],
-        successUrl:
-          "https://" +
-          DOMAIN +
-          "/success.html?session_id={CHECKOUT_SESSION_ID}",
-        cancelUrl: "https://" + DOMAIN + "/canceled.html",
-      })
-      .then(handleResult);
+  const redirectToCheckout = async (event) => {
+    event.preventDefault();
+    const stripe = await stripePromise;
+    const { error } = await stripe.redirectToCheckout({
+      items: [{ plan: SUBSCRIPTION_YEARLY_PLAN_ID, quantity: 1 }],
+      successUrl:
+        "https://" + DOMAIN + "/success.html?session_id={CHECKOUT_SESSION_ID}",
+      cancelUrl: "https://" + DOMAIN + "/canceled.html",
+    });
+
+    if (error) {
+      console.warn("Error:", error);
+    }
   };
 
   /*
@@ -77,30 +77,22 @@ const Home = () => {
               <Button
                 full
                 title="Yearly Subscription"
-                onClick={() =>
-                  this.redirectToCheckout(SUBSCRIPTION_YEARLY_PLAN_ID)
-                }
+                onClick={redirectToCheckout}
               />
               <Button
                 full
                 title="6 Month Subscription"
-                onClick={() =>
-                  this.redirectToCheckout(SUBSCRIPTION_6MONTH_PLAN_ID)
-                }
+                onClick={redirectToCheckout}
               />
               <Button
                 full
                 title="Quarterly (every 3 months) Subscription"
-                onClick={() =>
-                  this.redirectToCheckout(SUBSCRIPTION_QUARTERLY_PLAN_ID)
-                }
+                onClick={redirectToCheckout}
               />
               <Button
                 full
                 title="Monthly Subscription"
-                onClick={() =>
-                  this.redirectToCheckout(SUBSCRIPTION_MONTHLY_PLAN_ID)
-                }
+                onClick={redirectToCheckout}
               />
             </div>
           </div>

@@ -167,7 +167,7 @@ module.exports = {
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),
-      primary: "CGColorCreateGenericCMYK(0.01, 0.18, 0.82, 0.01, 1.00)",
+      primary: "#ffc93c",
       secondary: "#00baa6",
       light: "#f5f5f5",
       "light-200": "#f0f0f0",

@@ -30,6 +30,7 @@ class Layout extends React.Component {
         <SiteContext.Consumer>
           {(context) => {
             console.log("baselayout rerendering...");
+            /*
             let {
               navItems: {
                 navInfo: { data: links },
@@ -44,6 +45,7 @@ class Layout extends React.Component {
             });
 
             links.unshift({ name: "Home", link: "/" });
+            */
             return (
               <div className="min-h-screen">
                 <nav>
@@ -57,12 +59,12 @@ class Layout extends React.Component {
                     >
                       <Link to="/">
                         <img
-                          className="mb-4 w-24 mw-24 sm:w-20 sm:mr-16"
+                          className="mb-4 w-96 mw-96 sm:w-48 sm:mr-48"
                           alt="Logo"
                           src={logo}
                         />
                       </Link>
-                      <div className="flex flex-wrap">
+                      {/*                      <div className="flex flex-wrap">
                         {links.map((l, i) => (
                           <Link to={l.link} key={i}>
                             <p
@@ -73,7 +75,7 @@ class Layout extends React.Component {
                             </p>
                           </Link>
                         ))}
-                      </div>
+                      </div> */}
                       {/* <div className="flex flex-1 justify-end pr-4 relative">
                         <Link to="/cart">
                           <FaShoppingCart />
@@ -93,8 +95,8 @@ class Layout extends React.Component {
                   <main className="w-fw">{children}</main>
                 </div>
                 <footer className="flex justify-center">
-                  <div className="flex w-fw px-8 desktop:px-0 border-solid border-t border-gray-300 items-center">
-                    <span className="block text-gray-700 pt-4 pb-8 mt-2 text-xs">
+                  <div className="flex w-fw px-8 desktop:px-0 items-center">
+                    <span className="block pt-4 pb-8 mt-2 text-xs">
                       Copyright © 2020 Nemea LLC. All rights reserved.
                     </span>
                   </div>

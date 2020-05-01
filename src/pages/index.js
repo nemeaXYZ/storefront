@@ -66,13 +66,12 @@ const Home = () => {
       <SEO title="Home" />
       <div className="w-full">
         <div
-          className="bg-green-200
+          className="
         lg:h-hero
         p-6 pb-10 smpb-6
         flex lg:flex-row flex-col"
         >
           <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
-            <h1>Drive, by Nemea</h1>
             <div>
               <Button
                 full

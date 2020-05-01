@@ -54,11 +54,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `nemea.xyz`,
-        short_name: `starter`,
+        name: `Drive, by Nemea`,
+        short_name: `Nemea`,
         start_url: `/`,
-        background_color: `#0B0B0B`,
-        theme_color: `#0B0B0B`,
+        background_color: `##ffc93c`,
+        theme_color: `##ffc93c`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },

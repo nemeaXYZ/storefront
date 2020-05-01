@@ -6,8 +6,6 @@ Out of the box, the site uses completely static data coming from a provider at `
 
 ![](src/images/logo.jpg)
 
-> This project is still in Beta.
-
 ### Getting started
 
 1. Clone the project

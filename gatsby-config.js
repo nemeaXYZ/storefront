@@ -23,6 +23,12 @@ module.exports = {
         component: require.resolve(`./src/layouts/baseLayout.js`),
       },
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "2287232254912143",
+      },
+    },
     `gatsby-plugin-stripe`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
@@ -48,11 +54,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `nemea.xyz`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#0B0B0B`,
+        theme_color: `#0B0B0B`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },

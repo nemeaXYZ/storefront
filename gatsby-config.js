@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: "Nemea",
     author: "Lex Templeton",
-    description: "Fuel for the driven.",
+    description: "Fuel for the driven. Move, or get out of the way.",
     siteUrl: "https://nemea.xyz/",
     social: [
       {
@@ -48,7 +48,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -65,6 +64,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 };

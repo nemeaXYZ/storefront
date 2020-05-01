@@ -12,7 +12,7 @@ module.exports = [{
       options: {"plugins":[]},
     },{
       plugin: require('../node_modules/gatsby-plugin-manifest/gatsby-browser.js'),
-      options: {"plugins":[],"name":"nemea.xyz","short_name":"starter","start_url":"/","background_color":"#0B0B0B","theme_color":"#0B0B0B","display":"minimal-ui","icon":"src/images/icon.png"},
+      options: {"plugins":[],"name":"Drive, by Nemea","short_name":"Nemea","start_url":"/","background_color":"#ffc93c","theme_color":"#ffc93c","display":"minimal-ui","icon":"src/images/icon.png"},
     },{
       plugin: require('../gatsby-browser.js'),
       options: {"plugins":[]},

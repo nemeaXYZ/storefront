@@ -11,11 +11,11 @@ var plugins = [{
       plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-offline/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
       plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Drive, by Nemea","short_name":"Nemea","start_url":"/","background_color":"#ffc93c","theme_color":"#ffc93c","display":"minimal-ui","icon":"src/images/icon.png"},
+    },{
+      plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

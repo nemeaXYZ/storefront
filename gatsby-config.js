@@ -36,7 +36,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["Eina, Eina-SemiBold"],
+          families: ["Bourton Bold, AllisonScript, Argon"],
           urls: ["/fonts/fonts.css"],
         },
       },

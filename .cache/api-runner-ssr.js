@@ -2,17 +2,20 @@ var plugins = [{
       plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-layout/gatsby-ssr'),
       options: {"plugins":[],"component":"/Users/u6032949/Documents/Nemea/Development/storefront/src/layouts/baseLayout.js"},
     },{
+      plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-facebook-pixel/gatsby-ssr'),
+      options: {"plugins":[],"pixelId":"2287232254912143"},
+    },{
       plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-stripe/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Drive, by Nemea","short_name":"Nemea","start_url":"/","background_color":"#ffc93c","theme_color":"#ffc93c","display":"minimal-ui","icon":"src/images/icon.png"},
+    },{
       plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
-    },{
-      plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/icon.png"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

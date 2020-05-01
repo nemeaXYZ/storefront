@@ -63,7 +63,7 @@ const Home = () => {
 */
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Drive by Nemea" />
       <div className="w-full">
         <div
           className="

@@ -57,8 +57,8 @@ module.exports = {
         name: `Drive, by Nemea`,
         short_name: `Nemea`,
         start_url: `/`,
-        background_color: `##ffc93c`,
-        theme_color: `##ffc93c`,
+        background_color: `#ffc93c`,
+        theme_color: `#ffc93c`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },

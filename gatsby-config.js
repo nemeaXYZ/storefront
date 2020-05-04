@@ -4,7 +4,7 @@ module.exports = {
     title: "Nemea",
     author: "Lex Templeton",
     description: "Fuel for the driven. Move, or get out of the way.",
-    siteUrl: "https://nemea.xyz/",
+    siteUrl: "https://www.nemea.xyz/",
     social: [
       {
         name: "twitter",

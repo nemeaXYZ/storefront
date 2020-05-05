@@ -24,6 +24,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-linkedin-insight`,
+      options: {
+        partnerId: `2140140`,
+
+        // Include LinkedIn Insight in development.
+        // Defaults to false meaning LinkedIn Insight will only be loaded in production.
+        includeInDevelopment: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve(`./src/layouts/baseLayout.js`),

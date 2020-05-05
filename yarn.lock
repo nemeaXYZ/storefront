@@ -865,7 +865,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
   integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
@@ -5810,6 +5810,13 @@ gatsby-plugin-layout@^1.1.22:
   integrity sha512-S8fYUIUZ8sluA0oSmqXoVkMPgT+iINHS5xYxtmvqlWnvOa1We4KbEV+9UBN8WEL+RtMCFuxJj2fVuLspqax67g==
   dependencies:
     "@babel/runtime" "^7.9.2"
+
+gatsby-plugin-linkedin-insight@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-linkedin-insight/-/gatsby-plugin-linkedin-insight-1.0.1.tgz#93531b7f19675c83115eca05c5cfc49d880288f3"
+  integrity sha512-CjY1yUT0pv7ueD539SbdpQI2PIdrrpX7W+mfk9JnKYoURcBFP044GFaryuIgHqNTsi4X7CwO0YkF41i1j7SAqg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
 
 gatsby-plugin-manifest@^2.2.39:
   version "2.4.1"

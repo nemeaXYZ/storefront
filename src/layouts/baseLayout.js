@@ -19,7 +19,7 @@ toast.configure({
   },
 });
 
-const logo = require("../images/logo.webp");
+const logo = require("../images/logo.png");
 
 class Layout extends React.Component {
   render() {

@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-linkedin-insight/gatsby-ssr'),
+      options: {"plugins":[],"partnerId":"2140140","includeInDevelopment":true},
+    },{
       plugin: require('/Users/u6032949/Documents/Nemea/Development/storefront/node_modules/gatsby-plugin-layout/gatsby-ssr'),
       options: {"plugins":[],"component":"/Users/u6032949/Documents/Nemea/Development/storefront/src/layouts/baseLayout.js"},
     },{

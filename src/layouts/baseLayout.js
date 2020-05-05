@@ -7,7 +7,7 @@
 
 import React from "react";
 import { Link } from "gatsby";
-import { SiteContext, ContextProviderComponent } from "../context/mainContext";
+import Consumer, { ContextProviderComponent } from "../context/mainContext";
 import { titleIfy, slugify } from "../../utils/helpers";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
@@ -27,7 +27,7 @@ class Layout extends React.Component {
 
     return (
       <ContextProviderComponent>
-        <SiteContext.Consumer>
+        <Consumer>
           {(context) => {
             console.log("baselayout rerendering...");
             /*
@@ -104,7 +104,7 @@ class Layout extends React.Component {
               </div>
             );
           }}
-        </SiteContext.Consumer>
+        </Consumer>
       </ContextProviderComponent>
     );
   }

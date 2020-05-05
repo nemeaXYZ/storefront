@@ -84,43 +84,23 @@ const Home = () => {
     }
   };
 
-  /*
-  document.getElementById("basic-btn").addEventListener("click", function(evt) {
-    redirectToCheckout(SUBSCRIPTION_BASIC_PLAN_ID);
-  });
-
-  document.getElementById("pro-btn").addEventListener("click", function(evt) {
-    redirectToCheckout(SUBSCRIPTION_PRO_PLAN_ID);
-  });
-*/
   return (
     <>
       <SEO title="Drive by Nemea" />
       <div>
         <div className="w-full">
-          <Button
-            third
-            title="Yearly Subscription"
-            onClick={redirectToCheckout}
-          />
-          <Button
-            third
-            title="6 Month Subscription"
-            onClick={redirectToCheckout6}
-          />
-          <Button
-            third
-            title="Monthly Subscription"
-            onClick={redirectToCheckout1}
-          />
+          <Button title="Yearly Subscription" onClick={redirectToCheckout} />
+          <Button title="6 Month Subscription" onClick={redirectToCheckout6} />
+          <Button title="Monthly Subscription" onClick={redirectToCheckout1} />
         </div>
-        <div>
+        <div class="justify-center sm:block md:block lg:flex xl:flex">
           <InfoCard
+            class="sm:w-full md:w-full lg:w-2/3 xl:w-2/3"
             text="A 2012 study from Taiwan reported that a four-week course of a
               cordyceps extract was able to improve cholesterol levels."
           />
+          <img class="sm:w-full md:w-full lg:w-1/3 xl:w-1/3" src={bottle} />
         </div>
-        <img src={bottle} />
       </div>
     </>
   );

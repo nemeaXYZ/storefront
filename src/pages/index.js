@@ -16,6 +16,8 @@ import Button from "../components/Button";
 
 import { graphql } from "gatsby";
 
+const bottle = require("../images/bottle.webp");
+
 const Home = () => {
   // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
   var PUBLISHABLE_KEY = "pk_test_HHeSNy0geAn8XSYYXH1kKbSp00bp2UFeGU";
@@ -72,6 +74,11 @@ const Home = () => {
         flex lg:flex-row flex-col"
         >
           <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
+            <img
+              className="mb-4 w-96 mw-96 sm:w-48 sm:mr-48"
+              alt="Bottle"
+              src={bottle}
+            />
             <div>
               <Button
                 full

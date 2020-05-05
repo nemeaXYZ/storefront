@@ -15,12 +15,24 @@ import { loadStripe } from "@stripe/stripe-js";
 import Button from "../components/Button";
 
 import { graphql } from "gatsby";
-
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "../images/logo.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        sizes(maxWidth: 768) {
+          ...GatsbyImageSharpSizes_tracedSVG
+        }
+      }
+    }
+  }
+`;
 const Home = () => {
   // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
   var PUBLISHABLE_KEY = "pk_test_HHeSNy0geAn8XSYYXH1kKbSp00bp2UFeGU";
   // Replace with the domain you want your users to be redirected back to after payment
-  var DOMAIN = "nemea.xyz"; // window.location.hostname;
+  var DOMAIN = "www.nemea.xyz"; // window.location.hostname;
   // Replace with a SKU for your own product (created either in the Stripe Dashboard or with the API)
   var SUBSCRIPTION_YEARLY_PLAN_ID = "plan_HBLfmTZ415bQs8";
   var SUBSCRIPTION_6MONTH_PLAN_ID = "plan_HBLgu7kUCybVKs";
@@ -52,15 +64,6 @@ const Home = () => {
     }
   };
 
-  /*
-  document.getElementById("basic-btn").addEventListener("click", function(evt) {
-    redirectToCheckout(SUBSCRIPTION_BASIC_PLAN_ID);
-  });
-
-  document.getElementById("pro-btn").addEventListener("click", function(evt) {
-    redirectToCheckout(SUBSCRIPTION_PRO_PLAN_ID);
-  });
-*/
   return (
     <>
       <SEO title="Drive by Nemea" />

@@ -12,14 +12,13 @@ import { titleIfy, slugify } from "../../utils/helpers";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 import { colors } from "../theme";
+import Img from "gatsby-image";
 
 toast.configure({
   progressStyle: {
     background: colors.primary,
   },
 });
-
-const logo = require("../images/logo.png");
 
 class Layout extends React.Component {
   render() {
@@ -58,10 +57,10 @@ class Layout extends React.Component {
                     sm:flex-row"
                     >
                       <Link to="/">
-                        <img
+                        <Img
                           className="mb-4 w-96 mw-96 sm:w-48 sm:mr-48"
                           alt="Logo"
-                          src={logo}
+                          fixed={this.props.data.file.childImageSharp.fixed}
                         />
                       </Link>
                       {/*                      <div className="flex flex-wrap">
